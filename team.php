@@ -14,39 +14,7 @@
 <body>
     <header>
 
-        <!--start navbar-->
-        <nav id="gui_nav_bar">
-            <!-- container of nav-->
-            <div class="wraper-lev">
-                <!--menu toggle-->
-                <div class="menu-icon-lev" id="toggleMenuButton" onclick="burger-menu">
-                    <!--<input type="checkbox" />-->
-                    <div class="line1-menu"></div>
-                    <div class="line2-menu"></div>
-                    <div class="line3-menu"></div>
-                </div>
-                <!--end menu toggle-->
-                <!-- page logo-->
-                <div class="header-logo-lev dsk3">
-                    <a class="dsk-logo" href="index.html"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2016/12/treehouse-logo.png" alt="veev"></a>
-                    <a class="mob-logo" href="index.html"><img src="https://webhostingforstudents.com/wp-content/uploads/2014/08/Treehouse-Logo.png" alt="tgvev"></a>
-                </div>
-                <!--end page logo-->
-                <!-- navigation lists-->
-                <div class="header-list-lev dsk7 ">
-                    <ul id="menu" class="gui_nav_ul">
-                        <li class="first-nav-lev"><a href="">Techdegree</a></li>
-                        <li class="first-nav-lev"><a href="team.html">Team</a></li>
-                        <li class="third-nav-lev"><a href="signin.html">Sign in</a></li>
-                    </ul>
-                    <ul>
-                        <li><a class="gui_nav_bar_trial" href="trial.html">Free trial</a></li>
-                    </ul>
-                </div>
-                <!-- end navigation list-->
-            </div>
-            <!--end container of nav-->
-        </nav>
+    <?php include 'header.php'?>
     </header>
     <!--end of nav-->
     <section class="wil-entete">
@@ -277,62 +245,11 @@
         </form>
     </section>
 
-    <footer>
-        <!--footer part 1 -->
-        <div class="part1">
-            <div class="logo-footer">
-                <img src="https://cdnifyblog.a.cdnify.io/wp-content/uploads/2014/01/Treehouse-Logo.png" alt="lorem">
-            </div>
-            <div class="copyright">
-                <p>&copy;Treehouse Island, Inc.</p>
-            </div>
-        </div>
-        <!--end of footer part 1 -->
-        <!--footer part 2-->
-        <div class="part2">
-            <ul class="footer-lists">
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">About</a></li>
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">Creers</a></li>
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">Terms</a></li>
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">Privacy</a></li>
-            </ul>
-            <ul class="footer-lists">
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">Contact</a></li>
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">Blog</a></li>
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">Affiliate Program</a></li>
-                <li class="footer-lists-items"><a href="#" class="footer-lists-links">TalentPath</a></li>
-            </ul>
-        </div>
-        <!--end of footer part 2-->
-    </footer>
-    <script>
-        function burgerMenu() {
-            var menu = document.getElementById("menu");
-            if (menu.style.opacity == 0) {
-                menu.style.opacity = 1;
-            } else {
-                menu.style.opacity = 0;
-            }
-        }
+    
+    <?php include 'footer.php' ?>
+    <!---->
 
-
-        /*function closeMenu{
-            var menu = document.getElementById("menu");
-            menu.style.opacity = O;
-        }*/
-
-        //we gonna catch the selected element (aka menu);
-        // by using some javascript methods :)
-        // 'n we store it into a variable called toggleMenuButton'
-        var btn = document.getElementById("toggleMenuButton");
-
-        // then, we add some event listeners on it (in order to catch user events like "click")
-        // when we click on the selected button, it' s gonna call the burgermenu function, that's what we call a "callback function".
-
-        btn.addEventListener("click", burgerMenu);
-        //btn.addEventListener("click", closeMenu)
-        //btn.removeEventListener("click", burgerMenu);
-    </script>
+    <?php include 'js.php'  ?>
 </body>
 
 </html>
