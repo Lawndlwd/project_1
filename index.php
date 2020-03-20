@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/1c8d8e89d7.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap" rel="stylesheet">
-</head>
 
 
-
-
+<?php $pageName="Tree House"; ?>
+<?php require_once 'head.php'?>
 
 <body>
-
-
     <!--start navbar-->
     <?php include 'header.php'?>
-    
     <!--end of nav-->
+
+
     <!---->
     <section class="banner-lev">
         <div class="banner-container-lev">
@@ -71,6 +58,8 @@
         </div>
     </section>
     <!---->
+
+
     <!---->
     <section class=" container  main-section">
         <div class="main container">
@@ -109,6 +98,8 @@
         </div>
     </section>
     <!---->
+
+    
     <!---->
     <?php include 'footer.php' ?>
     <!---->
