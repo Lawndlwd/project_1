@@ -8,7 +8,7 @@
 
 
     <!---->
-    <?php include 'bannerF.php' ?>
+    <?php include 'bannerw.php' ?>
     <!---->
 
 

@@ -17,6 +17,7 @@
         margin: 0;
         padding: 0;
     }
+    .error {color: #FF0000;}
 
 
 
@@ -62,7 +63,7 @@
     position: fixed;
     display: flex;
     align-items: center;
-
+    top: 0;
     }
     .gui_nav_bar_trial{
     border: 2px solid #75daad;
@@ -163,7 +164,7 @@
     .form-header-lev{
     color: #222;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     background-color: #f3f3f1;
     padding: 1rem;
     }
@@ -214,7 +215,7 @@
     color: #999;
     border: none;
     }
-    input[type="button"] {
+    input[type="submit"] {
     width: 80%;
     height: 3.5rem;
     background-color: rgba(30, 139, 195, 1);
@@ -225,7 +226,7 @@
     transition: all .3s;
     cursor: pointer;
     }
-    input[type="button"]:hover{
+    input[type="submit"]:hover{
     background-color: rgb(18, 100, 141);
     }
 
@@ -547,7 +548,7 @@
         margin: .5rem auto !important;
     }
     .video-banner video{
-        height: 55vh;
+        height: 40vh;
     }
     .valuable-img , .supportive-img{
         width: 300px;
